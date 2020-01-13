@@ -1,0 +1,455 @@
+
+<main id="main">
+<!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+  
+        <ol class="carousel-indicators"></ol>
+  
+        <div class="carousel-inner" role="listbox">
+          <div *ngFor="let slider of sliders" [class.active]="slider.id =='1'" class="carousel-item">
+            <div class="carousel-background"><img src="{{slider.imageSrc}}" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>{{slider.sliderHeader | translate:user}}</h2>
+                <p>{{slider.sliderText | translate:user}}</p>
+                <a href="#featured-services" class="btn-get-started scrollto">{{ 'GetStarted' | translate:user }}</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- <div class="carousel-item">
+              <div class="carousel-background"><img src="../../../assets/img/slider/f1de7eef-d6a1-486a-840d-e4b7c77b3e6b.jpg" alt=""></div>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2> {{ 'Temporibusautemquibusdam' | translate:user }}</h2>
+                  <p>{{ 'Beataevitae' | translate:user }}</p>
+                  <a href="#featured-services" class="btn-get-started scrollto">{{ 'GetStarted' | translate:user }}</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="carousel-item">
+              <div class="carousel-background"><img src="../../../assets/img/slider/fe3f58f9-6312-4ceb-b3a7-0dd3baa8b2ac.jpg" alt=""></div>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2> {{ 'Namliberotempore' | translate:user }}</h2>
+                  <p>{{ 'Nequeporro' | translate:user }}</p>
+                  <a href="#featured-services" class="btn-get-started scrollto">{{ 'GetStarted' | translate:user }}</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="carousel-item">
+              <div class="carousel-background"><img src="../../../assets/img/slider/tecnologia-en.png" alt=""></div>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>{{ 'Magnamaliquamquaerat' | translate:user }}</h2>
+                  <p> {{ 'lorem' | translate:user }} </p>
+                  <a href="#featured-services" class="btn-get-started scrollto">{{ 'GetStarted' | translate:user }}</a>
+                </div>
+              </div>
+            </div> -->
+  
+        </div>
+  
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">{{ 'Previous' | translate:user }}</span>
+        </a>
+  
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">{{ 'Next' | translate:user }}</span>
+        </a>
+  
+      </div>
+    </div>
+  </section><!-- #intro -->
+  
+
+  <!--==========================
+        About Us Section
+      ============================-->
+  <section id="about">
+    <div class="container">
+
+      <header class="section-header">
+        <h3>{{ 'AboutUs' | translate:user }}</h3>
+        <p>{{ 'AboutUstxt' | translate:user }}</p>
+      </header>
+
+      <div class="row about-cols">
+
+        <div class="col-md-4 wow fadeInUp">
+          <div class="about-col">
+            <div class="img">
+              <img src="../assets/img/about-mission.jpg" alt="" class="img-fluid">
+              <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            </div>
+            <h2 class="title"><a href="#"> {{ 'OurMission' | translate:user }}</a></h2>
+            <p>
+              {{ 'OurMissiontxt' | translate:user }}
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="about-col">
+            <div class="img">
+              <img src="../assets/img/about-plan.jpg" alt="" class="img-fluid">
+              <div class="icon"><i class="ion-ios-list-outline"></i></div>
+            </div>
+            <h2 class="title"><a href="#">{{ 'OurPlan' | translate:user }}</a></h2>
+            <p>
+              {{ 'OurPlantxt' | translate:user }}
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="about-col">
+            <div class="img">
+              <img src="../assets/img/about-vision.jpg" alt="" class="img-fluid">
+              <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+            </div>
+            <h2 class="title"><a href="#">{{ 'OurVision' | translate:user }}</a></h2>
+            <p>
+              {{ 'OurVisiontxt' | translate:user }}
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- #about -->
+
+
+
+  <!--==========================
+        Skills Section
+      ============================-->
+  <section id="skills">
+    <div class="container">
+
+      <header class="section-header">
+        <h3>{{ 'Ourbranches' | translate:user }}</h3>
+        <p>{{ 'Ourbranchestxt' | translate:user }}</p>
+      </header>
+
+      <div class="skills-content">
+        <div class="row">
+          <div  *ngFor="let branch of branches" class="col-md-3">
+             <div class="card">
+              <h2> {{ branch.address.title }}</h2>
+              <h6>{{ branch.address.details }}</h6>
+                <div class="card-body">
+                  <a href="tel:{{ branch.phone}}" class="egypt tmg-eg-phone-call" target="_blank">
+                    <span class="tmg-eg-phone-call"><img class="trp-flag-image tmg-eg-phone-call"
+                        src="../assets/img/kuwait-flag.png" width="30" height="30" alt="الكويت"
+                        title="الكويت"></span><span class="ion-ios-telephone tmg-eg-phone-call"></span></a><span>{{ branch.phone}}</span>
+                </div>
+                <iframe [src]='branch.mapSrc | safe' width="600" height="450" frameborder="0" style="border:0;"
+                  allowfullscreen=""></iframe>
+             </div>
+          </div>
+       
+       </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="portfolio" class="section-bg">
+    <div class="container">
+
+      <header class="section-header">
+        <h3 class="section-title">{{ 'OURPORDUCTS' | translate:user }}</h3>
+      </header>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <ul id="portfolio-flters">
+            <li (click)= "filterProducts('all')" >All</li>
+            <li (click)= "filterProducts('business')" >{{ 'business' | translate:user }}</li>
+            <li (click)= "filterProducts('maxitherapy')">{{ 'maxitherapy' | translate:user }}</li>
+            <li (click)= "filterProducts('energy')">{{ 'energy' | translate:user }}</li>
+            <li (click)= "filterProducts('nice')">{{ 'nice' | translate:user }}</li>
+            <li (click)= "filterProducts('fashion')">{{ 'fashion' | translate:user }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container" >
+
+        <div *ngFor="let product of products" class="col-lg-4 col-md-6 portfolio-item filter-business wow fadeInUp">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{{apiurl}}{{product.productImage[0]}}" class="img-fluid" alt="">
+              <a href="#" data-lightbox="portfolio" data-title="App 1"
+                class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+              <a (click)="goToDetails(product)"  class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="#">"{{product.name}}"</a></h4> 
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section><!-- #portfolio -->
+
+  <!--==========================
+        Clients Section
+      ============================-->
+  <section id="clients" class="section-bg">
+    <div class="container">
+
+      <header class="section-header">
+        <h3 class="section-title"> {{ 'OURCLIENTS' | translate:user }}</h3>
+      </header>
+
+      <ngu-carousel #myCarousel [inputs]="carouselTileConfig" [dataSource]="clients ">
+        <ngu-tile *nguCarouselDef="let item; let i = index">
+          <!-- [@slider]="ani" PLease this animation to this tile to see animation. stackblitz have error with animations -->
+          <div class="tile" [style.background]="'url('+item+')'">
+            <h1>{{item.name}}</h1>
+            <img src="{{apiurl}}{{item.clientImage}}" alt="">
+          </div>
+        </ngu-tile>
+        <button NguCarouselNext class="rightRs" [style.opacity]="myCarousel.isLast ? 0.5:1">&gt;</button>
+
+        <button NguCarouselPrev class="leftRs" [style.opacity]="myCarousel.isFirst ? 0.5:1">&lt;</button>
+      </ngu-carousel>
+
+    </div>
+  </section><!-- #clients -->
+
+<!-- why Piccadilly -->
+<section id="whyPicadilly">
+  <div class="container">
+    <header class="section-header">
+      <h3 class="section-title"> {{ 'whyPiccadilly' | translate:user }}</h3>
+    </header>
+ 
+    <div class="row about-cols">
+
+      <div class="col-md-2 wow fadeInUp">
+        <div class="about-col">
+          <div class="img">
+            <img src="../../../assets/img/whypiccadilly/Capture.PNG" alt="" class="img-fluid">
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-md-10 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="about-col">
+          <p>
+            {{ 'High-durability' | translate:user }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row about-cols">
+
+      <div class="col-md-2 wow fadeInUp">
+        <div class="about-col">
+          <div class="img">
+            <img src="../../../assets/img/whypiccadilly/Capture2.PNG" alt="" class="img-fluid">
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-md-10 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="about-col">
+          <p>
+            {{ 'Comfort' | translate:user }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row about-cols">
+
+      <div class="col-md-2 wow fadeInUp">
+        <div class="about-col">
+          <div class="img">
+            <img src="../../../assets/img/whypiccadilly/Capture3.PNG" alt="" class="img-fluid">
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-md-10 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="about-col">
+          <p>
+            {{ 'confidence' | translate:user }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row about-cols">
+
+      <div class="col-md-2 wow fadeInUp">
+        <div class="about-col">
+          <div class="img">
+            <img src="../../../assets/img/whypiccadilly/Capture4.PNG" alt="" class="img-fluid">
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-md-10 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="about-col">
+          <p>
+            {{ 'solidity' | translate:user }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row about-cols">
+
+      <div class="col-md-2 wow fadeInUp">
+        <div class="about-col">
+          <div class="img">
+            <img src="../../../assets/img/whypiccadilly/Capture5.PNG" alt="" class="img-fluid">
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-md-10 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="about-col">
+          <p>
+            {{ 'innovation' | translate:user }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row about-cols">
+
+      <div class="col-md-2 wow fadeInUp">
+        <div class="about-col">
+          <div class="img">
+            <img src="../../../assets/img/whypiccadilly/Capture6.PNG" alt="" class="img-fluid">
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-md-10 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="about-col">
+          <p>
+            {{ 'Perfect' | translate:user }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row about-cols">
+
+      <div class="col-md-2 wow fadeInUp">
+        <div class="about-col">
+          <div class="img">
+            <img src="../../../assets/img/whypiccadilly/Capture7.PNG" alt="" class="img-fluid">
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-md-10 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="about-col">
+          <p>
+            {{ 'seriously' | translate:user }}
+          </p>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+</section><!-- #about -->
+
+  <!--==========================
+        Contact Section
+      ============================-->
+  <section id="contact" class="section-bg wow fadeInUp">
+    <div class="container">
+
+      <div class="section-header">
+        <h3>{{ 'CONTACTUS' | translate:user }}</h3>
+        <p>{{ 'sendmessage' | translate:user }}</p>
+      </div>
+
+      <div class="row contact-info">
+
+        <div class="col-md-4">
+          <div class="contact-address">
+            <i class="ion-ios-location-outline"></i>
+            <h3>{{ 'Address' | translate:user }}</h3>
+            <address>{{ 'AddressDetails' | translate:user }}</address>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-phone">
+            <i class="ion-ios-telephone-outline"></i>
+            <h3>{{ 'PhoneNumber' | translate:user }}</h3>
+            <p><a href="tel:+155895548855">{{ 'PhoneNumberDetails' | translate:user }}</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-email">
+            <i class="ion-ios-email-outline"></i>
+            <h3>{{ 'Email' | translate:user }}</h3>
+            <p><a href="mailto:info@example.com">{{ 'EmailDescreption' | translate:user }}</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form">
+        <div id="sendmessage">Your message has been sent. Thank you!</div>
+        <div id="errormessage"></div>
+        <form [formGroup]="profileForm" (ngSubmit)="send()" class="contactForm">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" name="name" formControlName="name" class="form-control" id="name"
+                placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="email" class="form-control" formControlName="email" name="email" id="email"
+                placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="subject" name="subject" id="subject"
+              placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            <div class="validation"></div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" formControlName="message" name="message" rows="5" id="message"
+              data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            <div class="validation"></div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+
+    </div>
+  </section><!-- #contact -->
+
+
+</main>

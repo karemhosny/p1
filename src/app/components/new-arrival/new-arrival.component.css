@@ -1,0 +1,23 @@
+.carousel-item.active {
+    opacity: 0;
+}
+
+/* section#portfolio {
+    margin-top: 4%;
+} */
+
+#intro .carousel-item {
+    height: auto;
+}
+@media screen and (max-width: 1400px) {
+    #portfolio{
+    
+        padding-top: 10%;
+    }
+    }
+    @media screen and (min-width: 1400px) {
+        #portfolio{
+        
+            padding-top: 14%;
+        }
+        }

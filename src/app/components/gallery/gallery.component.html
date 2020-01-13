@@ -1,0 +1,52 @@
+<section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+  
+        <ol class="carousel-indicators"></ol>
+  
+        <div class="carousel-inner" role="listbox">
+  
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="../../../assets/img/slider/fe3f58f9-6312-4ceb-b3a7-0dd3baa8b2ac.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+  
+                <h2> {{ 'Weareprofessional' | translate:user }} </h2>
+                <p>{{ 'lorem' | translate:user }}</p>
+                <a href="#featured-services" class="btn-get-started scrollto">{{ 'GetStarted' | translate:user }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- #intro -->
+  
+
+
+<section id="gallery">
+
+    <div class="container">
+
+        <header class="section-header">
+            <h3>gallery</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </header>
+        <div class="intro-container">
+
+            <div class="row">
+
+                <div *ngFor="let item of allGalleryItems" class="col-sm-4 nopadding">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!-- <iframe width="560" height="315" src="videos/VID1.mp4" allowfullscreen></iframe> -->
+                        <img *ngIf="item.mimeType=='image/jpeg' ||item.mimeType=='image/jpg' ||item.mimeType=='image/png'" width="400" controls src="{{apiurl}}{{item.galleryItemImage}}"/>
+                        <video *ngIf="item.mimeType=='video/mp4'"width="400" controls> <source src="{{apiurl}}{{item.galleryItemImage}}" type="video/mp4"> </video>
+                    </div>
+                </div>
+   
+            </div>
+        </div>
+    </div>
+</section><!-- #intro -->

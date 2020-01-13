@@ -1,0 +1,37 @@
+.card-img-top {
+
+    height: 268px;
+}
+.product-header{
+    text-align: center;
+}
+
+/* #intro {
+    opacity: 0;
+} */
+@media screen and (max-width: 1400px) {
+#details{
+
+    padding-top: 10%;
+}
+}
+@media screen and (min-width: 1400px) {
+    #details{
+    
+        padding-top: 14%;
+    }
+    }
+#intro .carousel-item {
+    height: auto;
+}
+h2.product-header {
+    padding-top: 31px;
+    padding-bottom: 42px;
+}
+.col-md-4 {
+    padding-top: 25px;
+    box-shadow: 9px 8px 10px #d0c9c9;
+}
+.container {
+    background-color: #fbfcfd;
+}

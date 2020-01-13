@@ -1,0 +1,238 @@
+section#clients1 {
+    background: #e4dbdb;
+}
+
+.bannerStyle div {
+    background-color: #ccc;
+    background-size: cover !important;
+    height: 100%;
+  }
+  
+  .bannerStyle img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bannerStyle h1 {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.32);
+    color: white;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tile {
+    min-height: 200px;
+    background-color: #ccc;
+    background-size: cover !important;
+  }
+  
+  .tile h1 {
+    text-align: center;
+    line-height: 50px;
+    background: rgba(0, 0, 0, 0.32);
+    color: #000;
+    margin: 0;
+  }
+  
+  h4 {
+    margin: 0;
+    padding: 10px 15px;
+    text-align: center;
+  }
+  
+  p {
+    margin: 0;
+    padding: 0 15px 10px;
+    text-align: center;
+  }
+  
+  .wBg {
+    background: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  nav {
+    border-bottom: 0px solid #ccc;
+    position: fixed;
+    width: 100%;
+    left: 30%;
+    background: transparent;
+  }
+  
+  nav h1 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .carBtn {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 999px;
+  }
+  
+  .leftRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 999px;
+    left: 0;
+  }
+  
+  .rightRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 999px;
+    right: 0;
+  }
+  
+  .leftRs1 {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 999px;
+    right: 0;
+  }
+  
+  .rightRs1 {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 999px;
+    left: 0;
+  }
+  
+  .myPoint {
+    list-style-type: none;
+    text-align: center;
+    padding: 12px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+  .myPoint  li {
+      display: inline-block;
+      border-radius: 50%;
+      border: 2px solid rgba(0, 0, 0, 0.55);
+      padding: 4px;
+      margin: 0 3px;
+      transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+      transition: 0.4s;
+  }
+  .myPoint  li.active {
+        background: #6b6b6b;
+        transform: scale(1.2);
+      }
+  
+  .carouselHoved {
+    opacity: 0.4;
+  }
+  
+  .myBannerPoint {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    color: beige;
+    justify-content: center;
+    list-style-type: none;
+    background: rgba(0, 0, 0, 0.34);
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .myBannerPoint li {
+      background: #6b6b6b;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+  }
+  .myBannerPoint li.active {
+        transform: translateY(-10px);
+        transition: .3s ease all;
+  }
+  .carousel-background img {
+    vertical-align: middle;
+    border-style: none;
+    padding-top: 6%!important;
+    height: initial;
+}
+
+
+iframe {
+  width: 100%;
+  height: 200px;
+}
+
+.col-md-3 {
+  padding: 1%;
+}
+
+
+
+.card-body span {
+  font-size: 33px;
+}
+
+img.trp-flag-image.tmg-eg-phone-call {
+  margin-right: 20px;
+  margin-top: -4px;
+}
+.card {
+  box-shadow: 8px 8px 0px #b7b5b5;
+}
+.card-body {
+ 
+  padding: 5px;
+}
+
+#clients img {
+  max-width: 100%;
+  opacity: 1;
+  transition: 134s;
+  padding: 15px 0;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  height:100%;
+  width:100%
+  
+}
+.rtl ngu-carousel.ngucarousel30QxIJ {
+  direction: ltr!important;
+}

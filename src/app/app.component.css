@@ -59,19 +59,19 @@ section#clients1 {
     margin: 0 auto;
   }
   
-  nav {
+  /* nav {
     border-bottom: 0px solid #ccc;
     position: fixed;
     width: 100%;
     left: 40%;
     background: transparent;
-  }
+  } */
   
-  nav h1 {
+  /* nav h1 {
     margin: 0;
     padding: 10px;
     text-align: center;
-  }
+  } */
   
   .carBtn {
     position: absolute;
@@ -155,10 +155,12 @@ section#clients1 {
         transform: scale(1.2);
       }
   
-  .carouselHoved {
-    opacity: 0.4;
+      ul.navbar-nav.ml-auto.navList li.nav-item {
+        width: max-content;
+    }
+    a.nav-link {
+      color: white;
   }
-  
   .myBannerPoint {
     position: absolute;
     display: -webkit-box;
@@ -187,3 +189,19 @@ section#clients1 {
         transition: .3s ease all;
   }
   
+
+  .fa-align-right:before {
+    content: "\f038";
+    color: white;
+}
+body.rtl ul.navbar-nav.ml-auto.navList[_ngcontent-xog-c0] {
+  float: left!important;
+  
+}
+ul.navbar-nav.ml-auto.navList {
+    float: right;
+}
+
+nav.navbar.navbar-expand-lg.navStyle {
+  background-color: #13140f;
+}

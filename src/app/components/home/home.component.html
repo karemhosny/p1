@@ -223,7 +223,8 @@
           <!-- [@slider]="ani" PLease this animation to this tile to see animation. stackblitz have error with animations -->
           <div class="tile" [style.background]="'url('+item+')'">
             <h1>{{item.name}}</h1>
-            <img src="{{apiurl}}{{item.clientImage}}" alt="">
+            <!-- <img src="{{apiurl}}{{item.clientImage}}" alt=""> -->
+            <img src="{{item.imgSrc}}" alt="">
           </div>
         </ngu-tile>
         <button NguCarouselNext class="rightRs" [style.opacity]="myCarousel.isLast ? 0.5:1">&gt;</button>

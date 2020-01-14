@@ -15,9 +15,15 @@
         <li><a routerLink="/gallery" routerLinkActive="active"> {{ 'gallery' | translate:user }}</a></li>
         <li><a routerLink="/products" routerLinkActive="active">{{ 'ourproducts' | translate:user }}</a></li>
         <li><a routerLink="/newarrival" routerLinkActive="active">{{ 'newarrival' | translate:user }}</a></li>
+        <li><a href="index.html#about" routerLinkActive="active">about us</a></li>
+        <li><a href="index.html#contact"routerLinkActive="active">contact us</a></li>
+        <li><a href="index.html#whyPicadilly"routerLinkActive="active">why Piccadilly</a></li>
+        <li><a href="index.html#branches"routerLinkActive="active"> branches</a></li>
+
         <!-- <li><a href="#contact">Contact</a></li> -->
         <li><a id="englishbuttin" (click)="switchLanguage('en')" style="display: none;">enlish</a></li>
         <li><a id="arabicbutton" (click)="switchLanguage('ar')">عربي</a></li>
+        
       </ul>
     </nav><!-- #nav-menu-container -->
   </div>

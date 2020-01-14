@@ -12,13 +12,13 @@
         <div class="carousel-inner" role="listbox">
           <div *ngFor="let slider of sliders" [class.active]="slider.id =='1'" class="carousel-item">
             <div class="carousel-background"><img src="{{slider.imageSrc}}" alt=""></div>
-            <div class="carousel-container">
+            <!-- <div class="carousel-container">
               <div class="carousel-content">
                 <h2>{{slider.sliderHeader | translate:user}}</h2>
                 <p>{{slider.sliderText | translate:user}}</p>
                 <a href="#featured-services" class="btn-get-started scrollto">{{ 'GetStarted' | translate:user }}</a>
               </div>
-            </div>
+            </div> -->
           </div>
   
           <!-- <div class="carousel-item">
@@ -133,7 +133,7 @@
   <!--==========================
         Skills Section
       ============================-->
-  <section id="skills">
+  <section id="branches">
     <div class="container">
 
       <header class="section-header">

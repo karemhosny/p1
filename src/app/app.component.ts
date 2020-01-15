@@ -118,8 +118,7 @@ ngOnInit(){
     // window.location.href = link;
   }
 
-  onClickedOutside(e: Event) {
-    console.log('Clicked outside:', e);
+  onClickedOutside() {
    if( document.getElementById("mainMenu").classList.contains('show')){
     document.getElementById("mainMenu").classList.remove('show');
    }

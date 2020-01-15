@@ -21,7 +21,7 @@ import { Observable, interval } from 'rxjs';
 })
 export class AppComponent implements OnInit{ 
   user:any;
-
+  showMenu:boolean=false;
   public carouselTileItems$: Observable<number[]>;
   public carouselTileConfig: NguCarouselConfig = {
     grid: { xs: 1, sm: 1, md: 3, lg: 4, all: 0 },
@@ -119,6 +119,8 @@ ngOnInit(){
   }
 
   onClickedOutside() {
+    this.showMenu=false;
+
    if( document.getElementById("mainMenu").classList.contains('show')){
     document.getElementById("mainMenu").classList.remove('show');
    }

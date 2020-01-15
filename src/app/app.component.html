@@ -1,13 +1,14 @@
 <header id="header">
   
    
-    <nav class="navbar navbar-expand-lg navStyle">
+    <nav  (clickOutside)="onClickedOutside($event)" class="navbar navbar-expand-lg navStyle">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#mainMenu">
           <span><i class="fas fa-align-right iconStyle"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="mainMenu">
-          <ul class="navbar-nav ml-auto navList">
-            <li class="nav-item active"><a routerLink="/home" routerLinkActive="active" class="nav-link">{{ 'Home' | translate:user }}<span class="sr-only">(current)</span></a></li>
+          <ul  class="navbar-nav ml-auto navList">
+            <li (clickOutside)="onClickedOutside($event)"style="display: none;"></li>
+            <li   class="nav-item active"><a routerLink="/home" routerLinkActive="active" class="nav-link">{{ 'Home' | translate:user }}<span class="sr-only">(current)</span></a></li>
             <li class="nav-item active"><a routerLink="/gallery" routerLinkActive="active" class="nav-link">{{ 'gallery' | translate:user }}<span class="sr-only">(current)</span></a></li>
               <li class="nav-item">
                   <a routerLink="/products" routerLinkActive="active" class="nav-link">{{ 'ourproducts' | translate:user }}</a>

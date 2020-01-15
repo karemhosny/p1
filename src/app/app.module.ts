@@ -15,6 +15,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SafePipePipe } from './pipes/safe-pipe.pipe';
 import { NewArrivalComponent } from './components/new-arrival/new-arrival.component';
 import { PrductDetailsComponent } from './components/prduct-details/prduct-details.component';
+import { ClickOutsideModule } from 'ng-click-outside';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -23,7 +24,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,GalleryComponent, ProductsComponent, HomeComponent, SafePipePipe, NewArrivalComponent, PrductDetailsComponent
   ],
   imports: [
-    BrowserModule,ReactiveFormsModule,
+    BrowserModule,ReactiveFormsModule,ClickOutsideModule,
     AppRoutingModule,
     HttpClientModule,NguCarouselModule,
     TranslateModule.forRoot({

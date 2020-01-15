@@ -117,4 +117,11 @@ ngOnInit(){
     //          +'&body='+document.getElementById('message').value;
     // window.location.href = link;
   }
+
+  onClickedOutside(e: Event) {
+    console.log('Clicked outside:', e);
+   if( document.getElementById("mainMenu").classList.contains('show')){
+    document.getElementById("mainMenu").classList.remove('show');
+   }
+  }
 }

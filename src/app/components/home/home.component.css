@@ -236,3 +236,19 @@ img.trp-flag-image.tmg-eg-phone-call {
 .rtl ngu-carousel.ngucarousel30QxIJ {
   direction: ltr!important;
 }
+
+
+div#mainMenu {
+  padding-right: 0%;
+}
+
+div#mainMenu {
+  margin-right: 53%;
+}
+.rtl div#mainMenu {
+  padding-right: 2%;
+}
+
+.rtl button.navbar-toggler {
+  padding-right: 3%;
+}

@@ -1696,7 +1696,22 @@ section#whyPicadilly {
 #whyPicadilly p{
   text-align:left
 }
-
-.rtl #whyPicadilly p{
+div#mainMenu {
+  padding-right: 56%;
+}
+.rtl div#mainMenu {
+  padding-right: 1%;
+}
+/* .rtl #whyPicadilly p{
   text-align:right
 }
+
+div#mainMenu {
+  padding-right: 55%;
+}
+.rtl button.navbar-toggler {
+  padding-right: 15%;
+} */
+/* .rtl div#mainMenu {
+  padding-right: 15%;
+} */

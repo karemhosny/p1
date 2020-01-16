@@ -42,7 +42,7 @@
                     <div class="embed-responsive embed-responsive-16by9">
                         <!-- <iframe width="560" height="315" src="videos/VID1.mp4" allowfullscreen></iframe> -->
                         <img *ngIf="item.mimeType=='image/jpeg' ||item.mimeType=='image/jpg' ||item.mimeType=='image/png'" width="400" controls src="{{apiurl}}{{item.galleryItemImage}}"/>
-                        <video *ngIf="item.mimeType=='video/mp4'"width="400" controls> <source src="{{apiurl}}{{item.galleryItemImage}}" type="video/mp4"> </video>
+                        <video *ngIf="item.mimeType=='video/mp4'"width="400" controls> <source src="{{item.galleryItemImage}}" type="video/mp4"> </video>
                     </div>
                 </div>
    

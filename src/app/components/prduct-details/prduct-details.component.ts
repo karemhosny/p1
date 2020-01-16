@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrductDetailsComponent implements OnInit {
    product:any={};
-   apiurl:string="http://localhost:3000/";
    user:any;
 
   constructor() { 

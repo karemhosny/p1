@@ -101,6 +101,7 @@ ngOnInit(){
     else{
       body.classList.remove("rtl");
       body.classList.add("ltr");
+      
 
       document.getElementById("arabicbutton").style.display = "block";
       document.getElementById("englishbuttin").style.display = "none";

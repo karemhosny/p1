@@ -1681,7 +1681,7 @@ button#englishbuttin {
 
 
 body.rtl #client ngu-carousel.ngucarouselZpvRDD {
-  direction: ltr!important;
+  direction: ltr;
 }
 
 section#whyPicadilly {
@@ -1702,6 +1702,9 @@ div#mainMenu {
 .rtl div#mainMenu {
   padding-right: 1%;
 }
+
+
+
 /* .rtl #whyPicadilly p{
   text-align:right
 }
@@ -1720,6 +1723,11 @@ ul.navbar-nav.ml-auto.navList li {
   background-color: #2d2b2b;
   border: 2px solid #131111;
 } */
+
+
+
+
+
 .rtl a.brand-navbar {
   float: right;
 }
@@ -1727,14 +1735,14 @@ ul.navbar-nav.ml-auto.navList li {
   float: left;
 }
 
-/* 
+
 @media (max-width: 600px) {
 
 #intro .carousel-item img {
-  height: 435px;
-  padding-top: 25%!important;
+  /* height: 435px; */
+  padding-top: 8%!important;
 }
-} */
+}
 
 
 .rtl ul.navbar-nav.ml-auto.navList a.nav-link {

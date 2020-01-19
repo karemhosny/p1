@@ -1715,8 +1715,15 @@ div#mainMenu {
 /* .rtl div#mainMenu {
   padding-right: 15%;
 } */
-
+/* 
 ul.navbar-nav.ml-auto.navList li {
   background-color: #2d2b2b;
   border: 2px solid #131111;
+} */
+.rtl a.brand-navbar {
+  float: right;
+}
+
+.ltr a.brand-navbar {
+  float: left;
 }

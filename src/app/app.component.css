@@ -194,16 +194,15 @@ section#clients1 {
     content: "\f038";
     color: white;
 }
-ul.navbar-nav.ml-auto.navList[_ngcontent-nij-c0] {
-  float: left;
+
+
+
+.ltr ul.navbar-nav.ml-auto.navList {
+    float: left;
 }
-.rtl ul.navbar-nav.ml-auto.navList[_ngcontent-nij-c0] {
+.rtl ul.navbar-nav.ml-auto.navList {
   float: right;
 }
-ul.navbar-nav.ml-auto.navList {
-    float: right;
-}
-
 nav.navbar.navbar-expand-lg.navStyle {
   background-color: #13140f;
 }

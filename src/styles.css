@@ -1727,13 +1727,17 @@ ul.navbar-nav.ml-auto.navList li {
   float: left;
 }
 
-
+/* 
 @media (max-width: 600px) {
 
 #intro .carousel-item img {
   height: 435px;
   padding-top: 25%!important;
 }
+} */
+
+
+.rtl ul.navbar-nav.ml-auto.navList a.nav-link {
+  font-weight: bold;
+  font-size: larger;
 }
-
-

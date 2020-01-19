@@ -1726,3 +1726,12 @@ ul.navbar-nav.ml-auto.navList li {
 .ltr a.brand-navbar {
   float: left;
 }
+
+
+@media (max-width: 600px) {
+
+#intro .carousel-item img {
+  height: 435px;
+  padding-top: 25%!important;
+}
+}

@@ -206,3 +206,7 @@ section#clients1 {
 nav.navbar.navbar-expand-lg.navStyle {
   background-color: #13140f;
 }
+.rtl ul.navbar-nav.ml-auto.navList a.nav-link {
+  font-weight: bold;
+  font-size: larger;
+}

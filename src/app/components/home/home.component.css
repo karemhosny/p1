@@ -186,12 +186,12 @@ section#clients1 {
         transform: translateY(-10px);
         transition: .3s ease all;
   }
-  .carousel-background img {
+  /* .carousel-background img {
     vertical-align: middle;
     border-style: none;
     padding-top: 6%!important;
     height: initial;
-}
+} */
 
 
 iframe {
@@ -224,7 +224,7 @@ img.trp-flag-image.tmg-eg-phone-call {
 #clients img {
   max-width: 100%;
   opacity: 1;
-  transition: 134s;
+  transition: -134s;
   padding: 15px 0;
   text-align: center;
   padding-left: 2%;

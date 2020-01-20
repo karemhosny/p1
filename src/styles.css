@@ -2,7 +2,9 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 body.rtl{
     direction: rtl;
-    float: right;
+}
+body.rtl ngu-carousel {
+  direction: ltr!important;
 }
 
 /*
@@ -1067,7 +1069,7 @@ body {
 #clients img {
   max-width: 100%;
   opacity: 1;
-  transition: 134s;
+  transition: -134s;
   padding: 15px 0;
   text-align: center;
   padding-left: 17%;
@@ -1679,22 +1681,24 @@ button#englishbuttin {
     font-weight: bold;
 }
 
-
+/* 
 body.rtl #client ngu-carousel.ngucarouselZpvRDD {
   direction: ltr;
-}
+} */
 
 section#whyPicadilly {
   padding-top: 5%;
 }
 
 #whyPicadilly img.img-fluid {
-  height: 82%;
-  width: 85%;
-  margin-top: -26px;
-}
+  height: 101px;
+  margin-top: 0px;
+} 
 #whyPicadilly p{
   text-align:left
+}
+.rtl #whyPicadilly p{
+  text-align:right
 }
 div#mainMenu {
   padding-right: 56%;
@@ -1708,16 +1712,16 @@ div#mainMenu {
 /* .rtl #whyPicadilly p{
   text-align:right
 }
-
+*/
 div#mainMenu {
   padding-right: 55%;
 }
 .rtl button.navbar-toggler {
   padding-right: 15%;
-} */
-/* .rtl div#mainMenu {
+} 
+.rtl div#mainMenu {
   padding-right: 15%;
-} */
+}
 /* 
 ul.navbar-nav.ml-auto.navList li {
   background-color: #2d2b2b;
@@ -1735,17 +1739,52 @@ ul.navbar-nav.ml-auto.navList li {
   float: left;
 }
 
-
+/* 
 @media (max-width: 600px) {
 
 #intro .carousel-item img {
-  /* height: 435px; */
   padding-top: 8%!important;
 }
+.rtl #intro .carousel-control-prev, #intro .carousel-control-next {
+  width: 5%;
 }
+.rtl .carousel-control-next {
+  right: 70%;
+}
+} */
 
 
 .rtl ul.navbar-nav.ml-auto.navList a.nav-link {
   font-weight: bold;
   font-size: larger;
+} 
+
+@media (max-width: 600px) {
+  nav.navbar.navbar-expand-lg{
+      margin-top: -5%;
+  }
+  .carousel-background img {
+    height: 319px;
+    margin-top: 100px;
+  }
+  .rtl a.brand-navbar {
+    float: left;
+    padding-left: 16%;
+}
+.ltr a.brand-navbar {
+  float: left;
+  margin-left: -6%;
+}
+  
+  }
+
+  
+.ngucarousel[_ngcontent-ndq-c2] {
+  position: relative;
+  overflow: scroll;
+  height: 100%;
+}
+
+.ltr ul.navbar-nav.ml-auto.navList {
+  padding-left: 40px;
 }

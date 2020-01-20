@@ -70,6 +70,7 @@ products:any=[
  {name:"Product14",imgSrc:"../assets/img/products/14.png"},
  {name:"Product15",imgSrc:"../assets/img/products/15.jpg"}
 ]
+ body = document.body;
 
   //create form for send mails
   profileForm = this.fb.group({
@@ -87,20 +88,22 @@ products:any=[
 ngOnInit(){
   document.getElementById("arabicbutton").style.display = "block";
   document.getElementById("englishbuttin").style.display = "none";
+  this.body.classList.add("ltr");
+
 }
 
   switchLanguage(language: string) {
-    var body = document.body;
+    
 
     if (language == 'ar') {
-      body.classList.add("rtl");
-      body.classList.remove("ltr");
+      this.body.classList.add("rtl");
+      this.body.classList.remove("ltr");
       document.getElementById("arabicbutton").style.display = "none";
       document.getElementById("englishbuttin").style.display = "block";
     }
     else{
-      body.classList.remove("rtl");
-      body.classList.add("ltr");
+      this.body.classList.remove("rtl");
+      this.body.classList.add("ltr");
       
 
       document.getElementById("arabicbutton").style.display = "block";
